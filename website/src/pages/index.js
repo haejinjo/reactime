@@ -113,49 +113,43 @@ const IndexPage = () => (
                 style={{ textDecoration: 'none', color: styles.redCode }}
                 href="https://github.com/open-source-labs/reactime"
               >
-                Interested in{' '}
-                <span>
-                  <a
-                    style={{ textDecoration: 'none', color: styles.redCode }}
-                    href="https://github.com/open-source-labs/reactime"
-                  >
-                    contributing?
+                contributing?
           </a>
-                </span>{' '}
+            </span>{' '}
         Reactime is open-source: help make React state debugging easier!
       </p>
         </SplashDescription>
       </SplashContainer>
     </Splash>
-        <VisualState>
-          <h2 style={{ textAlign: 'center' }}>
-            <strong>STATE:</strong> Track, Revert, Visualize
+    <VisualState>
+      <h2 style={{ textAlign: 'center' }}>
+        <strong>STATE:</strong> Track, Revert, Visualize
       </h2>
-          <img src={demogif} alt="ReacTime Demo" />
-        </VisualState>
-        <Features>
-          <h2>
-            <strong>Features</strong>
-          </h2>
-          <h4
-            style={{
-              fontWeight: '400',
-              fontSize: '13px',
-              color: styles.lightestGreen,
-              textAlign: 'center'
-            }}
-          >
-            Visualizing, Recording, and Tracking <strong>STATE</strong> has never
+      <img src={demogif} alt="ReacTime Demo" />
+    </VisualState>
+    <Features>
+      <h2>
+        <strong>Features</strong>
+      </h2>
+      <h4
+        style={{
+          fontWeight: '400',
+          fontSize: '13px',
+          color: styles.lightestGreen,
+          textAlign: 'center'
+        }}
+      >
+        Visualizing, Recording, and Tracking <strong>STATE</strong> has never
         been simpler.
       </h4>
-        </Features>
+    </Features>
 
-        <Team>
-          <h2 style={{ color: styles.reactGreen }}>
-            <strong>Meet the Team</strong>
-          </h2>
-        </Team>
-        <Footer />
+    <Team>
+      <h2 style={{ color: styles.reactGreen }}>
+        <strong>Meet the Team</strong>
+      </h2>
+    </Team>
+    <Footer />
   </>
 );
 

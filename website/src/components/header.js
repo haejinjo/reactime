@@ -26,6 +26,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: linear-gradient(#1c1d1f 75%, #FFFFFF00);
 
 
 

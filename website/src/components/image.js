@@ -15,7 +15,7 @@ import styled from "styled-components"
  */
 
 const StyledImage = styled(Img)`
-  min-width: 200px;
+  min-width: 300px;
 `
 
 const Image = () => {
@@ -23,7 +23,7 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "reactime-logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -19,7 +19,7 @@ import './layout.css'
 const styles = {
   reactGreen: '#427aa1', // h4 font-color #072D2B
   lightestGreen: '#BDD4DB',
-  gray: '#828170',
+  gray: '#a3a3a3',
 
   iconBColor: '#242529', // feature icon bg #E4C2B3
 }
@@ -55,16 +55,20 @@ const StyledGridElement = styled.div`
   align-items: center;
   justify-content: center;
   background: ${styles.iconBColor};
-  width: 295px;
+  width: 395px;
   height: 150px;
-  margin: 10px;
+  margin: 20px 10px 0px 10px;
   font-family: "Raleway", sans-serif;
   border-radius: 5px;
   border: 1px solid rgba(184, 196, 194, 0.25);
   box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.2);
+  @media only screen and (max-width: 480px) {
+  
+    width: 98%;
+  }
   h4 {
     color: ${styles.reactGreen};
-    margin-bottom: 1px;
+    margin-bottom: 4px;
     margin-top: 10px;
   }
   p {
@@ -77,6 +81,7 @@ const StyledGridElement = styled.div`
     color: ${styles.gray};
     text-align: center;
     margin-bottom: 1px;
+    font-weight: 400;
   }
 `
 
@@ -90,77 +95,49 @@ const Layout = ({ children }) => (
             <StyledGridElement className="feaStyle">
               <h4>Time Travel Tree Display</h4>
               <p>See your application state values on each change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
-            </StyledGridElement>
-            <StyledGridElement className="feaStyle">
-              <h4>Time Travel State History Graphic</h4>
-              <p>See your application state history and branch from old state.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+            
+              
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Time Travel Live Render</h4>
               <p>See your application DOM follow each state change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API,</h6>
-                <h6>Redux, Material UI and TypeScript</h6>
-                <h6>*** No support React-Router ***</h6>
-              </StyledGridElement>
+
+
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
-              <h4>Performance Render Time Display</h4>
-              <p>Keep track of your application render time on state change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API,</h6>
-                <h6>Material UI and TypeScript</h6>
-                <h6>*** No support for Redux ***</h6>
-              </StyledGridElement>
+              <h4>State History Graphic</h4>
+              <p>See your application state history and branch from old state.</p>
+             
+             
             </StyledGridElement>
+
+            <StyledGridElement className="feaStyle">
+              <h4>Components Map</h4>
+              <p>Vizualise the relationship between components.</p>
+              
+            </StyledGridElement>
+
+             <StyledGridElement className="feaStyle">
+              <h4>Atom and Selector Visualization</h4>
+              <p>Vizualise the data flow from atoms to selectors to components.</p>
+              
+            </StyledGridElement>
+
             <StyledGridElement className="feaStyle">
               <h4>Components Performance Graphic</h4>
               <p>Vizualise your application and render time of components on state change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API,</h6>
-                <h6>Material UI and TypeScript</h6>
-                <h6>*** No support for Redux ***</h6>
-              </StyledGridElement>
+              
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Diff Mode</h4>
               <p>Compare state changes.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+              
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
-              <h4>Import and Export</h4>
-              <p>Save your state history for future tests.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
-            </StyledGridElement>
-            <StyledGridElement className="feaStyle">
-              <h4>Persist mode</h4>
-              <p>Keep your state changes on app reload.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+              <h4>Import and Export and Persit</h4>
+              <p>Save your state history for future tests. Keep your state changes on app reload. </p>
+            
+           
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>TRY REACTIME WITH OUR DEMOS</h4>
@@ -192,14 +169,8 @@ const Layout = ({ children }) => (
               textAlign: 'center',
             }}
           >
-            Read more about what's new in Reactime
-            {' '}
-            <a
-              style={{ textDecoration: 'none', color: '#62D6FB' }}
-              href="https://tinyurl.com/reactimeMedium"
-            >
-              here
-            </a>
+            * Some features not available with every state managment solution.
+            
           </h4>
           <h4
             style={{
@@ -209,6 +180,17 @@ const Layout = ({ children }) => (
               textAlign: 'center',
             }}
           >
+            Read more about what's new in Reactime
+            {' '}
+            <a
+              style={{ textDecoration: 'none', color: '#62D6FB' }}
+              href="https://tinyurl.com/reactimeMedium"
+            >
+              here
+            </a>
+            {' '} 
+            {' '} 
+            {' '}
             See the latest Reactime release notes
             {' '}
             {' '}

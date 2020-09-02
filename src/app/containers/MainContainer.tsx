@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/ban-types */
-=======
-/* eslint-disable @typescript-eslint/ban-types */
-/* eslint-disable @typescript-eslint/no-explicit-any */
->>>>>>> f3bccc55dda838763bff1bef0a510e5470cbe693
 /* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import HeadContainer from './HeadContainer';
@@ -37,11 +32,11 @@ function MainContainer(): any {
     const port = chrome.runtime.connect();
 
     // listen for a message containing snapshots from the background script
-    port.onMessage.addListener((message:{action:string, payload:Record<string, unknown>, sourceTab:number}) => {
+    port.onMessage.addListener((message: { action: string, payload: Record<string, unknown>, sourceTab: number }) => {
       const { action, payload, sourceTab } = message;
       let maxTab;
       if (!sourceTab) {
-        const tabsArray:any = Object.keys(payload);
+        const tabsArray: any = Object.keys(payload);
         maxTab = Math.max(...tabsArray);
       }
       switch (action) {
@@ -80,23 +75,23 @@ function MainContainer(): any {
   /**
    * get set cookies for mixpanel analytics
    **/
-  useEffect( () => {
+  useEffect(() => {
     /**
      * create new user and attempt to read cookies
-    */     
+    */
     const user = new MPID();
     /**
      * If developing turn tracking off by setting user.debug to true;
-     * End goal: set user.debug variable in npm run dev
+     * End goal: set an environment variable to automate this toggle
      */
-    user.debug = true;
+    user.debug = false;
 
     if (!user.debug) {
       //set current user cookie if it does not exist in cookies;
-      if (user.checkDocumentCookie(document)) {        
+      if (user.checkDocumentCookie(document)) {
         user.getCookie();
         mixpanel.people.increment(user.get_dId(), "times");
-      } else {        
+      } else {
         user.setCookie();
         mixpanel.people.set(user.get_dId(), { times: 1 });
       }
@@ -143,9 +138,13 @@ function MainContainer(): any {
 =======
 =======
   // cleaning hierarchy and snapshotView from stateless data
+<<<<<<< HEAD
 >>>>>>> 29b7e5c02da60d028fb077bed40d0036b68d33a2
   const statelessCleaning = (obj:{name?:string; componentData?:object; state?:string|any;stateSnaphot?:object; children?:any[];}) => {
 >>>>>>> f3bccc55dda838763bff1bef0a510e5470cbe693
+=======
+  const statelessCleaning = (obj: { name?: string; componentData?: object; state?: string | any; stateSnaphot?: object; children?: any[]; }) => {
+>>>>>>> master
     const newObj = { ...obj };
     if (newObj.name === 'nameless') {
       delete newObj.name;
@@ -162,7 +161,7 @@ function MainContainer(): any {
     if (newObj.children) {
       newObj.children = [];
       if (obj.children.length > 0) {
-        obj.children.forEach((element:{state?:object|string, children?:[]}) => {
+        obj.children.forEach((element: { state?: object | string, children?: [] }) => {
           if (element.state !== 'stateless' || element.children.length > 0) {
             const clean = statelessCleaning(element);
             newObj.children.push(clean);

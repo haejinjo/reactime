@@ -409,10 +409,10 @@ const Layout = ({ children }) => {
               >
                 {getImage('haejin')}
                 <h4>Haejin Jo</h4>
-                {bios.Abaas ? (
+                {bios.Haejin ? (
                   <div className="content">
                     <p>
-                     Haejin Jo 
+                    Haejin is a lover of impactful online experiences and the humans that use them. With a background in enterprise-level C++ performance testing, her entry into the sometimes-arbitrary but always-exciting world of web has inspired newfound passions in client-side performance and state management at all layers of the stack. Whether it's testing out new programming paradigms or questioning abstractions, she'll meet you at whatever level you're on.
                     </p>
                   </div>
                 ) : null}
@@ -430,10 +430,10 @@ const Layout = ({ children }) => {
               >
                 {getImage('hien')}
                 <h4>Hien Nguyen</h4>
-                {bios.Abaas ? (
+                {bios.Hien ? (
                   <div className="content">
                     <p>
-                      Hien Nguyen
+                    Hien is an experienced software engineer with incredible passion for solving difficult technical problems. He prioritizes user experience when building scalable full stack applications with React, Redux, Context API, and Node. Recently, he gave two amazing talks on React Hooks and and a well-known programming paradigm, Lazy Evaluation in JavaScript. He loves cooking, reading books, and driving across the country listening to Viet Pop music.
                     </p>
                   </div>
                 ) : null}
@@ -450,7 +450,7 @@ const Layout = ({ children }) => {
               >
                 {getImage('jack')}
                 <h4>Jack Crish</h4>
-                {bios.Abaas ? (
+                {bios.Jack ? (
                   <div className="content">
                     <p>
                       Jack is a Javascript developer experienced with React.js, Twilio and Chrome Extensions.
@@ -527,10 +527,11 @@ const Layout = ({ children }) => {
               >
                 {getImage('kevin')}
                 <h4>Kevin Fey</h4>
-                {bios.Abaas ? (
+                {bios.Kevin ? (
                   <div className="content">
                     <p>
-                      Kevin is a dynamic 
+                    Kevin is an experienced full stack engineer specializing in front end development and React. Kevin uses his passion for dynamic user experience and side effect free State Management to craft beautiful intuitive web applications. 
+                  
                     </p>
                   </div>
                 ) : null}

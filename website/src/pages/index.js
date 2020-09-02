@@ -14,7 +14,7 @@ const styles = {
   reactGreen: '#62D6FB',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
-  redCode: '#99A93A'
+  redCode: '#acbf60'
 };
 
 const IndexPage = () => (
@@ -28,7 +28,7 @@ const IndexPage = () => (
           fontWeight: '500',
           letterSpacing: '2px',
           color: styles.reactGreen,
-          margin: '60px 0 50px 0',
+          margin: '80px 0 60px 0',
           textAlign: 'center'
         }}
       ></h1>
@@ -91,7 +91,7 @@ const IndexPage = () => (
           fontSize: '16px',
           color: styles.lighterGreen,
           textAlign: 'center',
-          marginBottom: '50px'
+          marginBottom: '18px'
         }}
       >
         Interested in{' '}

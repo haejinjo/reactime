@@ -17,13 +17,15 @@ import styled from 'styled-components'
 import './layout.css'
 
 const styles = {
-  reactGreen: '#487783', // h4 font-color #072D2B
+  reactGreen: '#427aa1', // h4 font-color #072D2B
   lightestGreen: '#BDD4DB',
-  iconBColor: '#353C44', // feature icon bg #E4C2B3
+  gray: '#828170',
+
+  iconBColor: '#242529', // feature icon bg #E4C2B3
 }
 
 const StyledWrapper = styled.div`
-  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%);
+ 
 `
 
 const StyledDiv = styled.div`
@@ -72,7 +74,7 @@ const StyledGridElement = styled.div`
     margin-bottom: 1px;
   }
   h6 {
-    color: black;
+    color: ${styles.gray};
     text-align: center;
     margin-bottom: 1px;
   }

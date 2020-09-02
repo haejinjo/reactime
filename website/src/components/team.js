@@ -22,12 +22,11 @@ const styles = {
   reactGreen: 'white', // h4
   // lighterGreen: `#002e2b`,
   lightestGreen: '#62D6FB', // hover, link color
-  biosBColor: '#353C44', // `#E4C2B3`, // team bios bg-color #e6e6e6
+  biosBColor: '#242529', // `#E4C2B3`, // team bios bg-color #e6e6e6
   redCode: '#62D6FB', // hover, link color
 };
 
 const StyledWrapper = styled.div`
-  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%)
 `;
 
 const StyledDiv = styled.div`
@@ -145,8 +144,12 @@ const Layout = ({ children }) => {
     Edwin: false,
     Ergi: false,
     Gabriela: false,
+    Haejin: false,
+    Hien: false,
+    Jack: false,
     JoshuaH: false,
     Josh: false,
+    Kevin: false,
     Nat: false,
     Pras: false,
     Rajeeb: false,
@@ -392,6 +395,68 @@ const Layout = ({ children }) => {
                   gpanciera
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Haejin', e)}
+              >
+                {getImage('haejin')}
+                <h4>Haejin Jo</h4>
+                {bios.Abaas ? (
+                  <div className="content">
+                    <p>
+                     Haejin Jo 
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  haejinjo
+                </a>
+              </StyledGridElement>
+
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Hien', e)}
+              >
+                {getImage('hien')}
+                <h4>Hien Nguyen</h4>
+                {bios.Abaas ? (
+                  <div className="content">
+                    <p>
+                      Hien Nguyen
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  hienqn
+                </a>
+              </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Jack', e)}
+              >
+                {getImage('jack')}
+                <h4>Jack Crish</h4>
+                {bios.Abaas ? (
+                  <div className="content">
+                    <p>
+                      Jack Crish
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  jackc27
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('JoshuaH', e)}
@@ -448,6 +513,28 @@ const Layout = ({ children }) => {
                   joshua0308
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Kevin', e)}
+              >
+                {getImage('kevin')}
+                <h4>Kevin Fey</h4>
+                {bios.Abaas ? (
+                  <div className="content">
+                    <p>
+                      Kevin is a dynamic 
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  kevinfey
+                </a>
+              </StyledGridElement>
+
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Nat', e)}

@@ -26,7 +26,7 @@ const styles = {
 };
 
 const StyledWrapper = styled.div`
-  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%);
+  
 `;
 
 const StyledDiv = styled.div`
@@ -82,13 +82,7 @@ extension from Chrome's Web Store.
                   <span style={{ color: styles.redCode }}>No NPM package needed!!!</span>
                 </p>
                 <p>
-                  <span style={{ color: styles.blueCode }}>
-***
-                    {' '}
-New perfomance features are not avalible on Redux applications
-                    {' '}
-***
-                  </span>
+                  
                 </p>
               </code>
             </StyledPre>

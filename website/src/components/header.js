@@ -26,7 +26,6 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(298deg, rgba(46,52,58,1) 0%, rgba(0,0,0,1) 100%);
 
 
 
@@ -105,14 +104,7 @@ const Header = props => {
     return window.removeEventListener("scroll", () => handleScroll())
   }, [])
 
-  // componentDidMount() {
-  //   window.addEventListener("scroll", this.handleScroll)
-  // }
-  // componetWillUnmount() {
-  //   window.removeEventListener("scroll", this.handleScroll)
-  // }
 
-  // render() {
   return (
     <HeaderContainer id="header">
       <HeaderTitle>
@@ -122,6 +114,7 @@ const Header = props => {
             style={{
               color: styles.headFontColor,
               textDecoration: `none`,
+              fontWeight: 'bold',
             }}
           >
             {props.siteTitle}

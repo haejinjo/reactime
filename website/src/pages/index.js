@@ -4,7 +4,6 @@ import React from 'react';
 import Splash from '../components/splash';
 import VisualState from '../components/visualState';
 import Features from '../components/features';
-import Installation from '../components/installation';
 import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
@@ -12,7 +11,7 @@ import demogif from '../images/MyMovie.gif';
 import Footer from '../components/footer';
 
 const styles = {
-  reactGreen: '#487783',
+  reactGreen: '#62D6FB',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
   redCode: '#99A93A',
@@ -29,13 +28,10 @@ const IndexPage = () => (
           fontWeight: '500',
           letterSpacing: '2px',
           color: styles.reactGreen,
-          margin: '160px 0 50px 0',
+          margin: '60px 0 50px 0',
           textAlign: 'center',
         }}
       >
-        STATE DEBUGGER FOR
-        {' '}
-        <strong>REACT</strong>
       </h1>
       <div style={{ maxWidth: '300px', marginBottom: '50px' }}>
         <Image />
@@ -53,7 +49,7 @@ const IndexPage = () => (
         {' '}
 time-travel debugging tool you need to develop
         your React application by tracking, visualizing, and reverting state
-        changes.
+        changes!
       </p>
       <p
         style={{
@@ -67,7 +63,7 @@ time-travel debugging tool you need to develop
         <a
           style={{
             textDecoration: 'none',
-            color: '#62D6FB',
+            color: styles.redCode,
           }}
           href="https://osawards.com/react/"
         >
@@ -75,6 +71,27 @@ React Open Source Awards 2020
         </a>
 !
       </p>
+
+      <p
+        style={{
+          fontFamily: 'Raleway',
+          textAlign: 'center',
+          color: styles.lighterGreen,
+        }}
+      >
+
+     
+      <a
+          style={{
+            textDecoration: 'none',
+            color: '#62D6FB',
+          }}
+          href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
+          >
+             <b> Download Now</b>
+          </a>
+          {' '}to get started debugging your applicaiton.
+          </p>
       <p
         style={{
           fontFamily: 'Raleway',
@@ -126,25 +143,12 @@ has never
         been simpler.
       </h4>
     </Features>
-    <Installation>
-      <h2 style={{ color: styles.reactGreen }}>
-        <strong>Simple Installation</strong>
-      </h2>
-      <h6>
-        {/* <a
-          style={{ textDecoration: 'none', color: styles.redCode }}
-          href="https://www.youtube.com/watch?v=lmG1X7Kf6zo&t="
-        >
-          Youtube Tutorial
-        </a> */}
-      </h6>
-    </Installation>
+   
     <Team>
       <h2 style={{ color: styles.reactGreen }}>
         <strong>Meet the Team</strong>
       </h2>
     </Team>
-    {/* {insert footer here} */}
     <Footer />
   </>
 );

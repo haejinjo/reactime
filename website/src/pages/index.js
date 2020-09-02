@@ -7,6 +7,7 @@ import Features from '../components/features';
 import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
+import styled from 'styled-components';
 import demogif from '../images/MyMovie.gif';
 import Footer from '../components/footer';
 
@@ -16,6 +17,16 @@ const styles = {
   lightestGreen: '#BDD4DB',
   redCode: '#99A93A'
 };
+
+const SplashContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  transform: translate(0px, 0px); opacity: 1; transition-delay: 0s;
+`;
+
+const SplashDescription = styled.div`
+  display: flex;
+`;
 
 const IndexPage = () => (
   <>
@@ -32,79 +43,83 @@ const IndexPage = () => (
           textAlign: 'center'
         }}
       ></h1>
-      <div style={{ maxWidth: '300px', marginBottom: '50px' }}>
-        <Image />
-      </div>
-      <p
-        style={{
-          fontFamily: 'Raleway',
-          textAlign: 'center',
-          color: styles.lighterGreen
-        }}
-      >
-        The <strong>only</strong> time-travel debugging tool you need to develop
+      <SplashContainer>
+        <div style={{ maxWidth: '300px', marginBottom: '50px' }}>
+          <Image />
+        </div>
+        <SplashDescription>
+          <p
+            style={{
+              fontFamily: 'Raleway',
+              textAlign: 'center',
+              color: styles.lighterGreen
+            }}
+          >
+            The <strong>only</strong> time-travel debugging tool you need to develop
         your React application by tracking, visualizing, and reverting state
         changes!
       </p>
-      <p
-        style={{
-          fontFamily: 'Raleway',
-          textAlign: 'center',
-          color: styles.lighterGreen
-        }}
-      >
-        Nominated for the Productivity Booster award at{' '}
-        <a
-          style={{
-            textDecoration: 'none',
-            color: styles.redCode
-          }}
-          href="https://osawards.com/react/"
-        >
-          React Open Source Awards 2020
+          <p
+            style={{
+              fontFamily: 'Raleway',
+              textAlign: 'center',
+              color: styles.lighterGreen
+            }}
+          >
+            Nominated for the Productivity Booster award at{' '}
+            <a
+              style={{
+                textDecoration: 'none',
+                color: styles.redCode
+              }}
+              href="https://osawards.com/react/"
+            >
+              React Open Source Awards 2020
         </a>
         !
       </p>
 
-      <p
-        style={{
-          fontFamily: 'Raleway',
-          textAlign: 'center',
-          color: styles.lighterGreen
-        }}
-      >
-        <a
-          style={{
-            textDecoration: 'none',
-            color: '#62D6FB'
-          }}
-          href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-        >
-          <b> Download Now</b>
-        </a>{' '}
+          <p
+            style={{
+              fontFamily: 'Raleway',
+              textAlign: 'center',
+              color: styles.lighterGreen
+            }}
+          >
+            <a
+              style={{
+                textDecoration: 'none',
+                color: '#62D6FB'
+              }}
+              href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
+            >
+              <b> Download Now</b>
+            </a>{' '}
         to get started debugging your applicaiton.
       </p>
 
-      <p
-        style={{
-          fontFamily: 'Raleway',
-          fontSize: '16px',
-          color: styles.lighterGreen,
-          textAlign: 'center',
-          marginBottom: '50px'
-        }}
-      >
-        Interested in{' '}
-        <span>
-          <a
-            style={{ textDecoration: 'none', color: styles.redCode }}
-            href="https://github.com/open-source-labs/reactime"
+          <p
+            style={{
+              fontFamily: 'Raleway',
+              fontSize: '16px',
+              color: styles.lighterGreen,
+              textAlign: 'center',
+              marginBottom: '50px'
+            }}
           >
-            contributing?
+            Interested in{' '}
+            <span>
+              <a
+                style={{ textDecoration: 'none', color: styles.redCode }}
+                href="https://github.com/open-source-labs/reactime"
+              >
+                contributing?
           </a>
-        </span>{' '}
+            </span>{' '}
         Reactime is open-source: help make React state debugging easier!
       </p>
+        </SplashDescription>
+      </SplashContainer>
     </Splash>
     <VisualState>
       <h2 style={{ textAlign: 'center' }}>

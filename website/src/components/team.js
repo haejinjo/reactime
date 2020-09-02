@@ -62,6 +62,9 @@ const StyledGridElement = styled.div`
   position: relative;
   border: 1px solid rgba(184, 196, 194, 0.25);
   box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
+  @media only screen and (max-width: 480px) {
+    width: 40%;
+  }
   h4 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -255,7 +258,7 @@ const Layout = ({ children }) => {
                 {bios.Carlos ? (
                   <div className="content">
                     <p>
-                    Carlos is a full-stack developer with a passion for optimized code and test-driven development. He is experienced in React, Node.js, SQL and NoSQL, and recently gave a sponsored talk on caching techniques in web development. In his free time, he enjoys playing with his dog (Penny), mindfulness meditation, gaming, and outdoors activities.
+                      Carlos is a full-stack developer with a passion for optimized code and test-driven development. He is experienced in React, Node.js, SQL and NoSQL, and recently gave a sponsored talk on caching techniques in web development. In his free time, he enjoys playing with his dog (Penny), mindfulness meditation, gaming, and outdoors activities.
                     </p>
                   </div>
                 ) : null}
@@ -324,7 +327,7 @@ const Layout = ({ children }) => {
                 {bios.Edwin ? (
                   <div className="content">
                     <p>
-                    Edwin is a driven software engineer from Los Angeles, CA who is passionate about solving real life problems and making a difference in the engineering field. He is passionate about contributing to open source software, continuing to improve software, and has a passion for solving algorithms,. Edwin is experienced in Node.js, Express, React, JavaScript, and Python. Aside from coding, some of Edwin's interests include playing basketball, watching the NBA (Lakers Fan) loves to make people laugh, loves talking about math and physics, and traveling around the world trying to find the best burger place!
+                      Edwin is a driven software engineer from Los Angeles, CA who is passionate about solving real life problems and making a difference in the engineering field. He is passionate about contributing to open source software, continuing to improve software, and has a passion for solving algorithms,. Edwin is experienced in Node.js, Express, React, JavaScript, and Python. Aside from coding, some of Edwin's interests include playing basketball, watching the NBA (Lakers Fan) loves to make people laugh, loves talking about math and physics, and traveling around the world trying to find the best burger place!
                     </p>
                   </div>
                 ) : null}
@@ -365,7 +368,7 @@ const Layout = ({ children }) => {
                 {bios.Gabriela ? (
                   <div className="content">
                     <p>
-                    Gabriela is a multicultural fullstack developer with a passion for React and build tools to help others. She has an ability to learn complex topics, on a fast and simply away. She has an unstoppable creator that loves to paint, sculpt and write. Gabi recently gave talks about React Router and author a blog about her coding journey and new developers technologies.
+                      Gabriela is a multicultural fullstack developer with a passion for React and build tools to help others. She has an ability to learn complex topics, on a fast and simply away. She has an unstoppable creator that loves to paint, sculpt and write. Gabi recently gave talks about React Router and author a blog about her coding journey and new developers technologies.
                     </p>
                   </div>
                 ) : null}
@@ -405,7 +408,7 @@ const Layout = ({ children }) => {
                 {bios.Abaas ? (
                   <div className="content">
                     <p>
-                     Haejin Jo 
+                      Haejin Jo
                     </p>
                   </div>
                 ) : null}
@@ -523,7 +526,7 @@ const Layout = ({ children }) => {
                 {bios.Abaas ? (
                   <div className="content">
                     <p>
-                      Kevin is a dynamic 
+                      Kevin is a dynamic
                     </p>
                   </div>
                 ) : null}

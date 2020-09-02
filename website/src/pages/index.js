@@ -14,7 +14,7 @@ const styles = {
   reactGreen: '#62D6FB',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
-  redCode: '#99A93A',
+  redCode: '#99A93A'
 };
 
 const IndexPage = () => (
@@ -29,10 +29,9 @@ const IndexPage = () => (
           letterSpacing: '2px',
           color: styles.reactGreen,
           margin: '60px 0 50px 0',
-          textAlign: 'center',
+          textAlign: 'center'
         }}
-      >
-      </h1>
+      ></h1>
       <div style={{ maxWidth: '300px', marginBottom: '50px' }}>
         <Image />
       </div>
@@ -40,14 +39,10 @@ const IndexPage = () => (
         style={{
           fontFamily: 'Raleway',
           textAlign: 'center',
-          color: styles.lighterGreen,
+          color: styles.lighterGreen
         }}
       >
-        The
-        {' '}
-        <strong>only</strong>
-        {' '}
-time-travel debugging tool you need to develop
+        The <strong>only</strong> time-travel debugging tool you need to develop
         your React application by tracking, visualizing, and reverting state
         changes!
       </p>
@@ -55,54 +50,51 @@ time-travel debugging tool you need to develop
         style={{
           fontFamily: 'Raleway',
           textAlign: 'center',
-          color: styles.lighterGreen,
+          color: styles.lighterGreen
         }}
       >
-        Nominated for the Productivity Booster award at
-        {' '}
+        Nominated for the Productivity Booster award at{' '}
         <a
           style={{
             textDecoration: 'none',
-            color: styles.redCode,
+            color: styles.redCode
           }}
           href="https://osawards.com/react/"
         >
-React Open Source Awards 2020
+          React Open Source Awards 2020
         </a>
-!
+        !
       </p>
 
       <p
         style={{
           fontFamily: 'Raleway',
           textAlign: 'center',
-          color: styles.lighterGreen,
+          color: styles.lighterGreen
         }}
       >
-
-     
-      <a
+        <a
           style={{
             textDecoration: 'none',
-            color: '#62D6FB',
+            color: '#62D6FB'
           }}
           href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-          >
-             <b> Download Now</b>
-          </a>
-          {' '}to get started debugging your applicaiton.
-          </p>
+        >
+          <b> Download Now</b>
+        </a>{' '}
+        to get started debugging your applicaiton.
+      </p>
+
       <p
         style={{
           fontFamily: 'Raleway',
           fontSize: '16px',
           color: styles.lighterGreen,
           textAlign: 'center',
-          marginBottom: '50px',
+          marginBottom: '50px'
         }}
       >
-        Interested in
-        {' '}
+        Interested in{' '}
         <span>
           <a
             style={{ textDecoration: 'none', color: styles.redCode }}
@@ -110,26 +102,13 @@ React Open Source Awards 2020
           >
             contributing?
           </a>
-        </span>
-        {' '}
+        </span>{' '}
         Reactime is open-source: help make React state debugging easier!
       </p>
-
-      Read more about what's new in Reactime
-            {' '}
-            <a
-              style={{ textDecoration: 'none', color: '#62D6FB' }}
-              href="https://tinyurl.com/reactimeMedium"
-            >
-              here
-            </a>
-           
     </Splash>
     <VisualState>
       <h2 style={{ textAlign: 'center' }}>
-        <strong>STATE:</strong>
-        {' '}
-Track, Revert, Visualize
+        <strong>STATE:</strong> Track, Revert, Visualize
       </h2>
       <img src={demogif} alt="ReacTime Demo" />
     </VisualState>
@@ -142,18 +121,14 @@ Track, Revert, Visualize
           fontWeight: '400',
           fontSize: '13px',
           color: styles.lightestGreen,
-          textAlign: 'center',
+          textAlign: 'center'
         }}
       >
-        Visualizing, Recording, and Tracking
-        {' '}
-        <strong>STATE</strong>
-        {' '}
-has never
+        Visualizing, Recording, and Tracking <strong>STATE</strong> has never
         been simpler.
       </h4>
     </Features>
-   
+
     <Team>
       <h2 style={{ color: styles.reactGreen }}>
         <strong>Meet the Team</strong>

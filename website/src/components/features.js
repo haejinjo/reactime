@@ -105,11 +105,24 @@ const Layout = ({ children }) => (
 
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
-              <h4>Time Travel State History Graphic</h4>
+              <h4>State History Graphic</h4>
               <p>See your application state history and branch from old state.</p>
              
              
             </StyledGridElement>
+
+            <StyledGridElement className="feaStyle">
+              <h4>Components Map</h4>
+              <p>Vizualise the relationship between components.</p>
+              
+            </StyledGridElement>
+
+             <StyledGridElement className="feaStyle">
+              <h4>Atom and Selector Visualization</h4>
+              <p>Vizualise the data flow from atoms to selectors to components.</p>
+              
+            </StyledGridElement>
+
             <StyledGridElement className="feaStyle">
               <h4>Components Performance Graphic</h4>
               <p>Vizualise your application and render time of components on state change.</p>

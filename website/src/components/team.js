@@ -46,6 +46,8 @@ const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+ 
+}
 `;
 
 const StyledGridElement = styled.div`
@@ -62,6 +64,10 @@ const StyledGridElement = styled.div`
   position: relative;
   border: 1px solid rgba(184, 196, 194, 0.25);
   box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
+  @media only screen and (max-width: 480px) {
+  
+    width: 40%;
+  }
   h4 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -446,7 +452,7 @@ const Layout = ({ children }) => {
                 {bios.Abaas ? (
                   <div className="content">
                     <p>
-                      Jack Crish
+                      Jack is a Javascript developer experienced with React.js, Twilio and Chrome Extensions.
                     </p>
                   </div>
                 ) : null}

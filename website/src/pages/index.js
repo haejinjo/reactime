@@ -114,6 +114,16 @@ React Open Source Awards 2020
         {' '}
         Reactime is open-source: help make React state debugging easier!
       </p>
+
+      Read more about what's new in Reactime
+            {' '}
+            <a
+              style={{ textDecoration: 'none', color: '#62D6FB' }}
+              href="https://tinyurl.com/reactimeMedium"
+            >
+              here
+            </a>
+           
     </Splash>
     <VisualState>
       <h2 style={{ textAlign: 'center' }}>

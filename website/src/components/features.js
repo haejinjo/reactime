@@ -9,44 +9,42 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import './layout.css'
+import './layout.css';
 
 const styles = {
   reactGreen: '#427aa1', // h4 font-color #072D2B
   lightestGreen: '#BDD4DB',
   gray: '#a3a3a3',
 
-  iconBColor: '#242529', // feature icon bg #E4C2B3
-}
+  iconBColor: '#242529' // feature icon bg #E4C2B3
+};
 
-const StyledWrapper = styled.div`
- 
-`
+const StyledWrapper = styled.div``;
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
-`
+`;
 
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 40px;
-`
+`;
 
 const StyledGridElement = styled.div`
   display: flex;
@@ -56,19 +54,18 @@ const StyledGridElement = styled.div`
   justify-content: center;
   background: ${styles.iconBColor};
   width: 395px;
-  height: 150px;
+  height: 120px;
   margin: 20px 10px 0px 10px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 5px;
   border: 1px solid rgba(184, 196, 194, 0.25);
   box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.2);
   @media only screen and (max-width: 480px) {
-  
     width: 98%;
   }
   h4 {
     color: ${styles.reactGreen};
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     margin-top: 10px;
   }
   p {
@@ -83,7 +80,7 @@ const StyledGridElement = styled.div`
     margin-bottom: 1px;
     font-weight: 400;
   }
-`
+`;
 
 const Layout = ({ children }) => (
   <>
@@ -95,62 +92,57 @@ const Layout = ({ children }) => (
             <StyledGridElement className="feaStyle">
               <h4>Time Travel Tree Display</h4>
               <p>See your application state values on each change.</p>
-            
-              
             </StyledGridElement>
+
             <StyledGridElement className="feaStyle">
               <h4>Time Travel Live Render</h4>
               <p>See your application DOM follow each state change.</p>
-
-
             </StyledGridElement>
+
             <StyledGridElement className="feaStyle">
               <h4>State History Graphic</h4>
-              <p>See your application state history and branch from old state.</p>
-             
-             
+              <p>
+                See your application history branch from old state.
+              </p>
             </StyledGridElement>
 
             <StyledGridElement className="feaStyle">
               <h4>Components Map</h4>
               <p>Vizualise the relationship between components.</p>
-              
             </StyledGridElement>
 
-             <StyledGridElement className="feaStyle">
-              <h4>Atom and Selector Visualization</h4>
-              <p>Vizualise the data flow from atoms to selectors to components.</p>
-              
+            <StyledGridElement className="feaStyle">
+              <h4>Atom and Selector Data Flow</h4>
+              <p>
+                Vizualise the data flow from atoms to selectors to components.
+              </p>
             </StyledGridElement>
 
             <StyledGridElement className="feaStyle">
               <h4>Components Performance Graphic</h4>
-              <p>Vizualise your application and render time of components on state change.</p>
-              
+              <p>
+                Vizualise your application and render time of components on
+                state change.
+              </p>
             </StyledGridElement>
-            <StyledGridElement className="feaStyle">
-              <h4>Diff Mode</h4>
-              <p>Compare state changes.</p>
-              
-            </StyledGridElement>
+
             <StyledGridElement className="feaStyle">
               <h4>Import and Export and Persit</h4>
-              <p>Save your state history for future tests. Keep your state changes on app reload. </p>
-            
-           
+              <p>
+                Save your state history for future tests. Keep your state
+                changes on app reload.{' '}
+              </p>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
-              <h4>TRY REACTIME WITH OUR DEMOS</h4>
+              <h4>Try Reactime With Our Demos</h4>
               <p>
                 <a
                   style={{ textDecoration: 'none', color: '#99A93A' }}
                   href="https://joshua0308.github.io/calculator/"
                 >
                   Calculator
-                </a>
-                {' '}
-                &amp;
-                {' '}
+                </a>{' '}
+                &amp;{' '}
                 <a
                   style={{ textDecoration: 'none', color: '#99A93A' }}
                   href="http://reactime-demo2.us-east-1.elasticbeanstalk.com/"
@@ -166,49 +158,19 @@ const Layout = ({ children }) => (
               fontWeight: '400',
               fontSize: '13px',
               color: styles.lightestGreen,
-              textAlign: 'center',
+              textAlign: 'center'
             }}
           >
             * Some features not available with every state managment solution.
-            
-          </h4>
-          <h4
-            style={{
-              fontWeight: '400',
-              fontSize: '13px',
-              color: styles.lightestGreen,
-              textAlign: 'center',
-            }}
-          >
-            Read more about what's new in Reactime
-            {' '}
-            <a
-              style={{ textDecoration: 'none', color: '#62D6FB' }}
-              href="https://tinyurl.com/reactimeMedium"
-            >
-              here
-            </a>
-            {' '} 
-            {' '} 
-            {' '}
-            See the latest Reactime release notes
-            {' '}
-            {' '}
-            <a
-              style={{ textDecoration: 'none', color: '#62D6FB' }}
-              href="https://github.com/open-source-labs/reactime/releases/tag/3.1.1"
-            >
-              here
-            </a>
           </h4>
         </StyledMain>
       </StyledDiv>
     </StyledWrapper>
   </>
-)
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

@@ -15,7 +15,7 @@ const styles = {
   reactGreen: '#62D6FB',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
-  redCode: '#99A93A'
+  redCode: '#acbf60'
 };
 
 const SplashContainer = styled.div`
@@ -39,7 +39,7 @@ const IndexPage = () => (
           fontWeight: '500',
           letterSpacing: '2px',
           color: styles.reactGreen,
-          margin: '60px 0 50px 0',
+          margin: '80px 0 60px 0',
           textAlign: 'center'
         }}
       ></h1>
@@ -104,7 +104,7 @@ const IndexPage = () => (
               fontSize: '16px',
               color: styles.lighterGreen,
               textAlign: 'center',
-              marginBottom: '50px'
+              marginBottom: '18px'
             }}
           >
             Interested in{' '}
@@ -113,43 +113,49 @@ const IndexPage = () => (
                 style={{ textDecoration: 'none', color: styles.redCode }}
                 href="https://github.com/open-source-labs/reactime"
               >
-                contributing?
+                Interested in{' '}
+                <span>
+                  <a
+                    style={{ textDecoration: 'none', color: styles.redCode }}
+                    href="https://github.com/open-source-labs/reactime"
+                  >
+                    contributing?
           </a>
-            </span>{' '}
+                </span>{' '}
         Reactime is open-source: help make React state debugging easier!
       </p>
         </SplashDescription>
       </SplashContainer>
     </Splash>
-    <VisualState>
-      <h2 style={{ textAlign: 'center' }}>
-        <strong>STATE:</strong> Track, Revert, Visualize
+        <VisualState>
+          <h2 style={{ textAlign: 'center' }}>
+            <strong>STATE:</strong> Track, Revert, Visualize
       </h2>
-      <img src={demogif} alt="ReacTime Demo" />
-    </VisualState>
-    <Features>
-      <h2>
-        <strong>Features</strong>
-      </h2>
-      <h4
-        style={{
-          fontWeight: '400',
-          fontSize: '13px',
-          color: styles.lightestGreen,
-          textAlign: 'center'
-        }}
-      >
-        Visualizing, Recording, and Tracking <strong>STATE</strong> has never
+          <img src={demogif} alt="ReacTime Demo" />
+        </VisualState>
+        <Features>
+          <h2>
+            <strong>Features</strong>
+          </h2>
+          <h4
+            style={{
+              fontWeight: '400',
+              fontSize: '13px',
+              color: styles.lightestGreen,
+              textAlign: 'center'
+            }}
+          >
+            Visualizing, Recording, and Tracking <strong>STATE</strong> has never
         been simpler.
       </h4>
-    </Features>
+        </Features>
 
-    <Team>
-      <h2 style={{ color: styles.reactGreen }}>
-        <strong>Meet the Team</strong>
-      </h2>
-    </Team>
-    <Footer />
+        <Team>
+          <h2 style={{ color: styles.reactGreen }}>
+            <strong>Meet the Team</strong>
+          </h2>
+        </Team>
+        <Footer />
   </>
 );
 

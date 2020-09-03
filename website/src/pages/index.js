@@ -15,7 +15,7 @@ const styles = {
   reactGreen: '#62D6FB',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
-  redCode: '#acbf60'
+  redCode: '#acbf60',
 };
 
 // Image AND Text
@@ -27,9 +27,10 @@ const SplashContainer = styled.div`
     font-size: 0.8em;
     flex-direction: column;
   }
-  transform: translate(0px, 40px);
-  opacity: 1;
-  transition-delay: 0s;
+  @media only screen and (max-height: 420px) {
+    margin-top: 65px;
+  }
+  transform: translate(0px, 80px);
 `;
 
 // Text
@@ -44,6 +45,20 @@ const SplashDescription = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 1.5em;
+`;
+
+const DemoGif = styled.img`
+  @media only screen and (max-width: 700px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+  }
+  @media only screen and (min-width: 700px) {
+    minWidth: 40vw;
+    maxWidth: 800px;
+  }
+  box-shadow: 5px 10px 15px black;
+  margin: 30px;
 `;
 
 const IndexPage = () => (
@@ -67,14 +82,15 @@ const IndexPage = () => (
           <p
             style={{
               fontFamily: 'Raleway',
+              lineHeight: '120%',
+              fontSize: '1.9rem',
+              fontWeight: '900',
               textAlign: 'center',
               color: styles.lighterGreen
             }}
           >
-            The <strong>only</strong> time-travel debugging tool you need to develop
-                  your React application by tracking, visualizing, and reverting state
-                  changes!
-                </p>
+            The only time-travel debugging tool you need
+          </p>
           <p
             style={{
               fontFamily: 'Raleway',
@@ -109,6 +125,7 @@ const IndexPage = () => (
               alignItems: 'center',
               height: '3em',
               width: '10em',
+              borderRadius: '5px',
             }}
             href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
             target="_blank"
@@ -118,27 +135,18 @@ const IndexPage = () => (
         </SplashDescription>
       </SplashContainer>
     </Splash>
-    <VisualState>
-      <h2 style={{ textAlign: 'center' }}>
-        Track, Revert, and Visualize your State
+    <div id='demo'>
+      <VisualState>
+        <h2 style={{ textAlign: 'center', padding: '40px' }}>
+          Track, Revert, <br />and Visualize your State
       </h2>
-      <img src={demogif} alt="ReacTime Demo" />
-    </VisualState>
+        <DemoGif src={demogif} alt="ReacTime Demo" />
+      </VisualState>
+    </div>
     <Features>
       <h2>
         <strong>Features</strong>
       </h2>
-      <h4
-        style={{
-          fontWeight: '400',
-          fontSize: '13px',
-          color: styles.lightestGreen,
-          textAlign: 'center'
-        }}
-      >
-        Visualizing, Recording, and Tracking <strong>STATE</strong> has never
-        been simpler.
-      </h4>
     </Features>
 
     <Team>

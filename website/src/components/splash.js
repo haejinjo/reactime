@@ -20,16 +20,13 @@ const StyledWrapper = styled.div`
 
 const StyledDiv = styled.div`
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 1024px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   line-height: 1.2rem;
-`
-
-const StyledMain = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `
 
 const Layout = ({ children }) => {
@@ -48,7 +45,7 @@ const Layout = ({ children }) => {
       <StyledWrapper>
         <Header siteTitle={data.site.siteMetadata.title} />
         <StyledDiv>
-          <StyledMain>{children}</StyledMain>
+          {children}
         </StyledDiv>
       </StyledWrapper>
     </>

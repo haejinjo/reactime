@@ -12,8 +12,23 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 config.autoAddCss = false
 
+const handleScroll = () => {
+  if (
+    window.innerWidth < 600 &&
+    (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+  ) {
+    document.getElementById("header").style.padding = "50px"
+  } else if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    document.getElementById("header").style.padding = "30px"
+  } else {
+    document.getElementById("header").style.padding = "50px"
+  }
+}
+
 const styles = {
-  // headerBColor: //`#487783`,
   headFontColor: `white`, // #BDD4DB
 }
 
@@ -27,9 +42,6 @@ const HeaderContainer = styled.header`
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(#1c1d1f 75%, #FFFFFF00);
-
-
-
   transition: 0.2s;
   @media (max-width: 600px) {
     justify-content: center;
@@ -82,29 +94,11 @@ const H1 = styled.h1`
   font-weight: 400;
 `
 
-// class Header extends React.Component {
 const Header = props => {
-  const handleScroll = () => {
-    if (
-      window.innerWidth < 600 &&
-      (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-    ) {
-      document.getElementById("header").style.padding = "50px"
-    } else if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      document.getElementById("header").style.padding = "30px"
-    } else {
-      document.getElementById("header").style.padding = "50px"
-    }
-  }
-
   useEffect(() => {
-    window.addEventListener("scroll", () => handleScroll())
-    return window.removeEventListener("scroll", () => handleScroll())
-  }, [])
-
+    window.addEventListener("scroll", () => handleScroll());
+    return window.removeEventListener("scroll", () => handleScroll());
+  }, []);
 
   return (
     <HeaderContainer id="header">

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components';
 
-import './layout.css';
-
 const styles = {
   reactGreen: '#427aa1', // h4 font-color #072D2B
   lightestGreen: '#BDD4DB',

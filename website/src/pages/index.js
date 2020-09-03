@@ -18,14 +18,32 @@ const styles = {
   redCode: '#acbf60'
 };
 
+// Image AND Text
 const SplashContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  transform: translate(0px, 0px); opacity: 1; transition-delay: 0s;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 700px) {
+    font-size: 0.8em;
+    flex-direction: column;
+  }
+  transform: translate(0px, 40px);
+  opacity: 1;
+  transition-delay: 0s;
 `;
 
+// Text
 const SplashDescription = styled.div`
+  @media only screen and (max-width: 700px) {
+    margin-top 3em;
+  }
   display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
 `;
 
 const IndexPage = () => (
@@ -44,9 +62,7 @@ const IndexPage = () => (
         }}
       ></h1>
       <SplashContainer>
-        <div style={{ maxWidth: '300px', marginBottom: '50px' }}>
-          <Image />
-        </div>
+        <Image />
         <SplashDescription>
           <p
             style={{
@@ -56,9 +72,9 @@ const IndexPage = () => (
             }}
           >
             The <strong>only</strong> time-travel debugging tool you need to develop
-        your React application by tracking, visualizing, and reverting state
-        changes!
-      </p>
+                  your React application by tracking, visualizing, and reverting state
+                  changes!
+                </p>
           <p
             style={{
               fontFamily: 'Raleway',
@@ -73,57 +89,38 @@ const IndexPage = () => (
                 color: styles.redCode
               }}
               href="https://osawards.com/react/"
+              target="_blank"
             >
               React Open Source Awards 2020
-        </a>
-        !
-      </p>
-
-          <p
+              </a>
+              !
+            </p>
+          <a
             style={{
               fontFamily: 'Raleway',
-              textAlign: 'center',
-              color: styles.lighterGreen
+              textDecoration: 'none',
+              color: 'black',
+              background: styles.reactGreen,
+              margin: '5px',
+              padding: '0px 1em',
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '3em',
+              width: '10em',
             }}
+            href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
+            target="_blank"
           >
-            <a
-              style={{
-                textDecoration: 'none',
-                color: '#62D6FB'
-              }}
-              href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-            >
-              <b> Download Now</b>
-            </a>{' '}
-        to get started debugging your applicaiton.
-      </p>
-
-          <p
-            style={{
-              fontFamily: 'Raleway',
-              fontSize: '16px',
-              color: styles.lighterGreen,
-              textAlign: 'center',
-              marginBottom: '18px'
-            }}
-          >
-            Interested in{' '}
-            <span>
-              <a
-                style={{ textDecoration: 'none', color: styles.redCode }}
-                href="https://github.com/open-source-labs/reactime"
-              >
-                contributing?
+            <strong>Download Now</strong>
           </a>
-            </span>{' '}
-        Reactime is open-source: help make React state debugging easier!
-      </p>
         </SplashDescription>
       </SplashContainer>
     </Splash>
     <VisualState>
       <h2 style={{ textAlign: 'center' }}>
-        <strong>STATE:</strong> Track, Revert, Visualize
+        Track, Revert, and Visualize your State
       </h2>
       <img src={demogif} alt="ReacTime Demo" />
     </VisualState>
@@ -148,7 +145,28 @@ const IndexPage = () => (
       <h2 style={{ color: styles.reactGreen }}>
         <strong>Meet the Team</strong>
       </h2>
+      <p
+        style={{
+          fontFamily: 'Raleway',
+          color: styles.lighterGreen,
+          textAlign: 'center',
+          marginBottom: '18px'
+        }}
+      >
+        Interested in{' '}
+        <span>
+          <a
+            style={{ textDecoration: 'none', color: styles.redCode }}
+            href="https://github.com/open-source-labs/reactime"
+            target="_blank"
+          >
+            contributing?
+            </a>
+        </span>{' '}
+          Reactime is open-source. Help make React state debugging easier!
+        </p>
     </Team>
+
     <Footer />
   </>
 );

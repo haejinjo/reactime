@@ -96,31 +96,22 @@ const Layout = ({ children }) => (
           <Grid>
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Time Travel Tree Display</h4>
-                <p>See your application state values on each change.</p>
-              </StyledGridElement>
-            </ZoomInGridElement>
-
-            <ZoomInGridElement className="feaStyle">
-              <StyledGridElement>
-                <h4>Time Travel Live Render</h4>
-                <p>See your application DOM follow each state change.</p>
-              </StyledGridElement>
-            </ZoomInGridElement>
-
-            <ZoomInGridElement className="feaStyle">
-              <StyledGridElement>
-                <h4>State History Graphic</h4>
-                <p>
-                  See your application history branch from old state.
-              </p>
+                <h4>State Snapshot Text Display</h4>
+                <p>See your application state in stylized, interactive JSON format.</p>
               </StyledGridElement>
             </ZoomInGridElement>
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
                 <h4>Components Map</h4>
-                <p>Vizualise the relationship between components.</p>
+                <p>Visualize relationships between components in a collapsible tree for a given snapshot.</p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Time Travel Live Render</h4>
+                <p>Simulate any state change from history in the DOM with a click of a button.</p>
               </StyledGridElement>
             </ZoomInGridElement>
 
@@ -128,26 +119,34 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Atom and Selector Data Flow</h4>
                 <p>
-                  Vizualise the data flow from atoms to selectors to components.
+                  Visualize the data flow from atoms to selectors to components.
+  </p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Snapshot History Display</h4>
+                <p>
+                  Monitor history as you time travel or make new changes to state.
               </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Components Performance Graphic</h4>
+                <h4>Components Performance</h4>
                 <p>
-                  Vizualise your application and render time of components on
-                  state change.
-              </p>
+                  Visualize the relative latency introduced by rerendering each component on state change.
+</p>
               </StyledGridElement>
             </ZoomInGridElement>
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Import and Export and Persit</h4>
+                <h4>Import, Export, and Persist</h4>
                 <p>
-                  Save your state history for future tests. Keep your state
+                  Save your state history for future tests.<br />Keep your state
                 changes on app reload.{' '}
                 </p>
               </StyledGridElement>
